@@ -3,7 +3,6 @@
 Light weighted OAuth2 provider written fully in Scala which wraps [scala-oauth2-provider](https://github.com/nulab/scala-oauth2-provider)
 
 - [Play Framework](https://www.playframework.com/)
-- [Akka Framework](https://github.com/nulab/akka-http-oauth2-provider)
 
 ### Run
 
