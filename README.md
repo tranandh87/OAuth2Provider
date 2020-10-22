@@ -5,7 +5,14 @@ Light weighted OAuth2 provider written fully in Scala which wraps [scala-oauth2-
 - [Play Framework](https://www.playframework.com/)
 - [Akka Framework](https://github.com/nulab/akka-http-oauth2-provider)
 
-This project uses H2 in-memory database. Pls see ![ERD](https://github.com/tranandh87/OAuth2Provider/wiki/Entity-Relationship-Diagram-(ERD)-for-Database) for more information on db.
+This project uses H2 in-memory database. 
+
+Entity Relationship Diagram (ERD) for Database
+
+![Entity Relationship Diagram (ERD) for database](https://github.com/tranandh87/OAuth2Provider/blob/main/ERD_Oauth2Provider.gif)
+
+[SQL to create and insert initial values to tables](https://github.com/tranandh87/OAuth2Provider/blob/main/conf/evolutions/default/1.sql)
+
 ### Run
 
 ```
