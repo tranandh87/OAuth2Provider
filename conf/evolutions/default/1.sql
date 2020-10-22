@@ -32,7 +32,7 @@ create index oauth2_client_owner_id_idx on oauth2_client(owner_id);
 insert into oauth2_client(owner_id, grant_type, client_id, client_secret)
   values (1, 'client_credentials', 'bob_client_id', 'bob_client_secret');
 insert into oauth2_client(owner_id, grant_type, client_id, client_secret, redirect_uri)
-  values (2, 'authorization_code', 'alice_client_id', 'alice_client_secret', 'http://alice.com/callback');
+  values (2, 'authorization_code', 'alice_client_id', 'alice_client_secret', 'http://alice.com/redirectUrl');
 insert into oauth2_client(owner_id, grant_type, client_id, client_secret)
   values (2, 'password', 'alice_client_id2', 'alice_client_secret2');
 
@@ -56,7 +56,7 @@ create unique index oauth2_authorization_code_code_idx on oauth2_authorization_c
 create index oauth2_authorization_code_oauth_client_id_idx on oauth2_authorization_code(oauth2_client_id);
 
 insert into oauth2_authorization_code(user_account_id, oauth2_client_id, code, redirect_uri)
-  values (2, 2, 'alice_code', 'http://alice.com/callback');
+  values (2, 2, 'alice_code', 'http://alice.com/redirectUrl');
 
 create sequence oauth2_access_token_id_seq;
 create table oauth2_access_token

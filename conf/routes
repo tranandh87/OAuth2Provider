@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-POST    /oauth/access_token         controllers.OAuth2Controller.generateAccessToken
+POST    /oauth2/generate_access_token         controllers.OAuth2Controller.generateAccessToken
 GET     /resources                  controllers.OAuth2Controller.getResources
 
 # Map static resources from the /public folder to the /assets URL path
