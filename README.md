@@ -115,7 +115,7 @@ Pls note the access token of Alice from above with `grant_type=authorization_cod
 }
 ```
 ### Database
-This project uses H2 in-memory database. 
+This project uses H2 in-memory database. `url = "jdbc:h2:mem:play"`
 
 #### Entity Relationship Diagram (ERD) for Database
 
