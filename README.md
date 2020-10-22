@@ -117,7 +117,7 @@ Pls note the access token of Alice from above with `grant_type=authorization_cod
 ### Database
 This project uses H2 in-memory database. 
 
-####Entity Relationship Diagram (ERD) for Database
+#### Entity Relationship Diagram (ERD) for Database
 
 ![Entity Relationship Diagram (ERD) for database](https://github.com/tranandh87/OAuth2Provider/blob/main/asset/images/ERD_Oauth2Provider.gif)
 
