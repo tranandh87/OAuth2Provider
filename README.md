@@ -1,0 +1,1 @@
+OAuth2Provider wrapper around scala-oauth2-provider
