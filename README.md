@@ -10,12 +10,6 @@ Light weighted OAuth2 provider written fully in Scala which wraps [scala-oauth2-
 sbt -Dplay.evolutions.db.default.autoApply=true run
 ```
 
-### Debug
-
-```
-sbt run -jvm-debug 9000 -Dplay.evolutions.db.default.autoApply=true
-```
-
 ## Generate access tokens with different [grant_type](https://oauth.net/2/grant-types/) using curl
 
 ### Authorization code
@@ -122,3 +116,11 @@ This project uses H2 in-memory database. `url = "jdbc:h2:mem:play"`
 ![Entity Relationship Diagram (ERD) for database](https://github.com/tranandh87/OAuth2Provider/blob/main/asset/images/ERD_Oauth2Provider.gif)
 
 [SQL to create and insert initial values to tables](https://github.com/tranandh87/OAuth2Provider/blob/main/conf/evolutions/default/1.sql)
+
+
+### Debug
+
+```
+sbt run -jvm-debug 9000 -Dplay.evolutions.db.default.autoApply=true
+```
+[Debug config](https://github.com/tranandh87/OAuth2Provider/blob/main/asset/images/Debug_Scala.png)
