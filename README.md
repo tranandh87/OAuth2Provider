@@ -119,6 +119,6 @@ This project uses H2 in-memory database.
 
 ####Entity Relationship Diagram (ERD) for Database
 
-![Entity Relationship Diagram (ERD) for database](https://github.com/tranandh87/OAuth2Provider/blob/main/ERD_Oauth2Provider.gif)
+![Entity Relationship Diagram (ERD) for database](https://github.com/tranandh87/OAuth2Provider/blob/main/asset/images/ERD_Oauth2Provider.gif)
 
 [SQL to create and insert initial values to tables](https://github.com/tranandh87/OAuth2Provider/blob/main/conf/evolutions/default/1.sql)
