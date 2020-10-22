@@ -123,4 +123,4 @@ This project uses H2 in-memory database. `url = "jdbc:h2:mem:play"`
 ```
 sbt run -jvm-debug 9000 -Dplay.evolutions.db.default.autoApply=true
 ```
-[Debug config](https://github.com/tranandh87/OAuth2Provider/blob/main/asset/images/Debug_Scala.png)
+![Debug config](https://github.com/tranandh87/OAuth2Provider/blob/main/asset/images/Debug_Scala.png)
