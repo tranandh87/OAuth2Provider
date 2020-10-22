@@ -42,8 +42,6 @@ class OAuth2Controller extends Controller with OAuth2Provider {
 
   class MyDataHandler extends DataHandler[UserAccount] {
 
-    // common
-
     override def validateClient(maybeCredential: Option[ClientCredential], request: AuthorizationRequest): Future[Boolean] = DB.readOnly { implicit session =>
       Future.successful((for {
         clientCredential <- maybeCredential
@@ -91,8 +89,6 @@ class OAuth2Controller extends Controller with OAuth2Provider {
       }
     }
 
-    // Refresh token grant
-
     override def findAuthInfoByRefreshToken(refreshToken: String): Future[Option[AuthInfo[UserAccount]]] = DB.readOnly { implicit session =>
       Future.successful(Oauth2AccessToken.findByRefreshToken(refreshToken).flatMap { accessToken =>
         for {
@@ -137,8 +133,6 @@ class OAuth2Controller extends Controller with OAuth2Provider {
     override def deleteAuthCode(code: String): Future[Unit] = DB.localTx { implicit session =>
       Future.successful(Oauth2AuthorizationCode.delete(code))
     }
-
-    // Protected resource
 
     override def findAccessToken(token: String): Future[Option[AccessToken]] = DB.readOnly { implicit session =>
       Future.successful(Oauth2AccessToken.findByAccessToken(token).map(toAccessToken))
