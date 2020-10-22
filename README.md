@@ -1,5 +1,3 @@
-OAuth2Provider wrapper around scala-oauth2-provider
-
 # OAuth2Provider:
 
 Light weighted OAuth2 provider written fully in Scala which wraps [scala-oauth2-provider](https://github.com/nulab/scala-oauth2-provider)
